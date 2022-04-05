@@ -1,0 +1,3 @@
+packages: xmonad-test.cabal
+
+with-compiler: ghc-9.2.2
