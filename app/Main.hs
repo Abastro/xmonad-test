@@ -12,15 +12,17 @@ main :: IO ()
 main = do
   --dirs <- getDirectories
   --let xmDir = cfgDir dirs
-  spawn "feh --bg-scale $HOME/Pictures/Universe/Andromeda_Galaxy.jpg"
-
+  spawn "feh --bg-scale /home/abastro/Pictures/Universe/Andromeda_Galaxy.jpg"
+  xmonad desktopConfig
+  {-
   xmonad . ewmhFullscreen $
     desktopConfig
-      { modMask = mod4Mask,
-        startupHook = startupHook desktopConfig <> do
-          setWMName "LG3D"
-          gnomeRegister, -- Registers xmonad with gnome
+      { --modMask = mod4Mask,
+        --startupHook = startupHook desktopConfig <> do
+        --  setWMName "LG3D"
+        --  gnomeRegister, -- Registers xmonad with gnome
         terminal = "gnome-terminal"
         --manageHook =  isDialog --> doFloat
       }
       `additionalKeysP` [("M-d", safeSpawnProg "nautilus")]
+      -}

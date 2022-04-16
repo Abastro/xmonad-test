@@ -31,3 +31,4 @@ install_app () {
 echo "Build script running."
 install_app "$cfgid" "$src" "$cache"
 ln -sf "$cache/$cfgid" "$output"
+echo "Build finished."
