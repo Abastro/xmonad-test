@@ -3,9 +3,4 @@ packages: xmonad-test.cabal
 with-compiler: ghc-9.2.2
 
 package *
-  executable-Dynamic: True
   ghc-options: -haddock
-
-program-options
-  ghc-options: -haddock
-
