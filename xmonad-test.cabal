@@ -21,8 +21,6 @@ executable xmonad-test
     , directory
     , X11
     , unix
-    , gi-gtk ==3.*
-    , gi-gdk ==3.*
     , xmonad >=0.13
     , xmonad-contrib >=0.14
 
