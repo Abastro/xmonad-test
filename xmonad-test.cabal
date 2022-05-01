@@ -26,4 +26,4 @@ executable xmonad-test
 
   hs-source-dirs:   app
   default-language: Haskell2010
-  ghc-options:  -W  -threaded +RTS -N -RTS
+  ghc-options:  -W  -threaded +RTS -N -RTS -debug
