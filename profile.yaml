@@ -1,0 +1,16 @@
+# Profile Configuration
+
+# Profile ID, should be ASCII w/o spaces
+ID: "xmonad-test"
+
+# Human-readable Profile Name
+name: "XMonad-Test"
+
+# Details on comments
+details: "XMonad test profile"
+
+# Install script could be optionally specified 
+# install: "/your/path/name"
+
+# Whether to build on startup
+buildOnStart: true
