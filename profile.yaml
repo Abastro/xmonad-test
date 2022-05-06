@@ -9,8 +9,21 @@ name: "XMonad-Test"
 # Details on comments
 details: "XMonad test profile"
 
-# Install script could be optionally specified 
+# Install script could be optionally specified.
+# Might call sudo.
 # install: "/your/path/name"
+
+# Build script to apply configuration changes.
+# Executables should be installed in "$XMONAD_CACHE_DIR".
+# "$ENV_ARCH" denotes the architecture, and "$ENV_OS" denotes the OS.
+# Current directory is set as the config directory.
+# Should never call sudo.
+build: "./build.sh"
+
+# Run script. May run executables installed in "$XMONAD_CACHE_DIR".
+# "$ENV_ARCH" denotes the architecture, and "$ENV_OS" denotes the OS.
+# Current directory is set as "$HOME".
+run: "./run.sh"
 
 # Whether to build on startup
 buildOnStart: true
