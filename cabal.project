@@ -1,6 +1,6 @@
 packages: xmonad-test.cabal
 
-with-compiler: ghc-9.2.2
+with-compiler: ghc-9.2.4
 
 package *
   ghc-options: -haddock
