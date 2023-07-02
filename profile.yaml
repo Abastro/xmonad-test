@@ -25,5 +25,7 @@ build: "./build.sh"
 # Current directory is set as "$HOME".
 run: "./run.sh"
 
-# Whether to build on startup
-buildOnStart: true
+# Dependencies which can be installed via package manager or cabal.
+# These are those available in the database folder.
+dependencies:
+  - feh
