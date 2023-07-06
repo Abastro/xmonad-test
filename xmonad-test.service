@@ -5,7 +5,6 @@ Description=XMonad test profile
 Type=simple
 StandardOutput=journal
 StandardError=journal
-ExecStart=xmonad-test
-ExecSearchPath=${XMONAD_CACHE_DIR}
+ExecStart=${XMONAD_CACHE_DIR}/${XMONAD_NAME}
 
 [Install]

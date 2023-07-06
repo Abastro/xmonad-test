@@ -24,6 +24,7 @@ build: "build.sh"
 # A service file can contain variables like XMONAD_CACHE_DIR, XMONAD_DATA_DIR, XMONAD_CONFIG_DIR,
 # which will be replaced when installed.
 # Variables should be denoted by e.g. ${XMONAD_CACHE_DIR}.
+# It is recommended to specify executable as "ExecStart=${XMONAD_CACHE_DIR}/${XMONAD_NAME}".
 run-service: "xmonad-test.service"
 
 # * Unused *
