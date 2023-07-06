@@ -1,9 +1,8 @@
 #!/bin/sh
-cfgid="xmonad-test"
-cache="$XMONAD_CACHE_DIR"
-xmonad_name="xmonad-$ENV_ARCH-$ENV_OS"
+PROF_ID="xmonad-test"
+XMONAD_EXE_PATH="$XMONAD_CACHE_DIR/xmonad-$ENV_ARCH-$ENV_OS"
 
-cabal install "exe:$cfgid" \
-  --installdir="$cache" --install-method=copy \
+cabal install "exe:$PROF_ID" \
+  --installdir="$XMONAD_CACHE_DIR" --install-method=copy \
   --overwrite-policy=always
-ln -sf "$cache/$cfgid" "$cache/$xmonad_name"
+ln -sf "$XMONAD_CACHE_DIR/$PROF_ID" "$XMONAD_EXE_PATH"
