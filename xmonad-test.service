@@ -1,0 +1,11 @@
+[Unit]
+Description=XMonad test profile
+
+[Service]
+Type=simple
+StandardOutput=journal
+StandardError=journal
+ExecStart=xmonad-test
+ExecSearchPath=${XMONAD_CACHE_DIR}
+
+[Install]

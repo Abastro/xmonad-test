@@ -18,12 +18,19 @@ details: "XMonad test profile"
 # "$ENV_ARCH" denotes the architecture, and "$ENV_OS" denotes the OS.
 # Current directory is set as the config directory.
 # Should never call sudo.
-build: "./build.sh"
+build: "build.sh"
 
+# Systemd service to run.
+# A service file can contain variables like XMONAD_CACHE_DIR, XMONAD_DATA_DIR, XMONAD_CONFIG_DIR,
+# which will be replaced when installed.
+# Variables should be denoted by e.g. ${XMONAD_CACHE_DIR}.
+run-service: "xmonad-test.service"
+
+# * Unused *
 # Run script. May run executables installed in "$XMONAD_CACHE_DIR".
 # "$ENV_ARCH" denotes the architecture, and "$ENV_OS" denotes the OS.
 # Current directory is set as "$HOME".
-run: "./run.sh"
+run: "run.sh"
 
 # Dependencies which can be installed via package manager or cabal.
 # These are those available in the database folder.
